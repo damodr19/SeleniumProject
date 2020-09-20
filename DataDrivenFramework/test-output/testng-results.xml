@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52774" started-at="2020-09-17T15:33:30Z" finished-at="2020-09-17T15:34:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52774" started-at="2020-09-17T15:33:30Z" finished-at="2020-09-17T15:34:23Z">
+      <class name="com.w2a.testcases.LoginTest">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="startTest" is-config="true" duration-ms="48" started-at="2020-09-17T15:33:30Z" finished-at="2020-09-17T15:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="setUp" is-config="true" duration-ms="3183" started-at="2020-09-17T15:33:30Z" finished-at="2020-09-17T15:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="readTestData()[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="readTestData" duration-ms="1226" started-at="2020-09-17T15:33:34Z" finished-at="2020-09-17T15:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTestData -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="setUp" is-config="true" duration-ms="33" started-at="2020-09-17T15:33:35Z" finished-at="2020-09-17T15:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGoogle(java.lang.String)[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="testGoogle" duration-ms="48215" started-at="2020-09-17T15:33:35Z" data-provider="dataprovider" finished-at="2020-09-17T15:34:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[india]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method status="PASS" signature="testClose()[pri:0, instance:com.w2a.testcases.LoginTest@49fd9b]" name="testClose" is-config="true" duration-ms="24" started-at="2020-09-17T15:34:23Z" finished-at="2020-09-17T15:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClose -->
+      </class> <!-- com.w2a.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
