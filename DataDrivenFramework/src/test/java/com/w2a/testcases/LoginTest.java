@@ -598,7 +598,7 @@ driver.findElement(By.linkText(Integer.toString(targetDay))).click();
 		//driver.close();
 	}
 	
-	@Test(dataProvider="dataprovider")
+	//@Test(dataProvider="dataprovider")
 	public void testGoogle(String user) throws InterruptedException
 	{
 		driver = new ChromeDriver();
@@ -761,7 +761,7 @@ driver.findElement(By.linkText(Integer.toString(targetDay))).click();
 		
 		
 	}
-	@Test
+//	@Test
 	public void readTestData() throws Exception
 	{
 		File f = new File(System.getProperty("user.dir")+"/testdata/testdata.xlsx");
@@ -802,7 +802,32 @@ driver.findElement(By.linkText(Integer.toString(targetDay))).click();
 		
 	}
 	
-	
+	@Test
+	public void readTestDataAll() throws Exception
+	{
+		File f = new File(System.getProperty("user.dir")+"/testdata/testdata.xlsx");
+		FileInputStream fis =new FileInputStream(f);
+		XSSFWorkbook workBook  =new XSSFWorkbook(fis);
+		XSSFSheet sheet =workBook.getSheetAt(0);
+		int rowc =sheet.getLastRowNum();
+		System.out.println(rowc);
+		
+		for (int i=0;i<=rowc;i++)
+		{
+			System.out.println();
+			int colCount =sheet.getRow(i).getLastCellNum();
+			
+			
+			for(int j =0;j<colCount;j++)
+			{
+				
+				System.out.print(sheet.getRow(i).getCell(j).getStringCellValue()+ " ");
+				
+			}
+			
+		}
+		
+	}
 	
 	
 	
